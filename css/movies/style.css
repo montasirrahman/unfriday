@@ -1,0 +1,211 @@
+
+/*------------loading ----------------*/
+.loading {
+    position: relative;
+    background: #e2e2e2;
+    overflow: hidden;
+}
+.lazyload {
+    background: #262626 url() no-repeat center;
+    height: auto;
+  }
+/*------all cointainer-------*/
+.movie-cointainer {
+    max-width: 2404px;
+    margin: 0 auto;
+    border: 0px solid red;
+    display: block;
+    width: 100%;
+}
+/*---------image hover text ---------*/
+.image-a-tag {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    border-radius: 5px;
+  }
+  
+  .image-hover-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle-text {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .image-a-tag:hover .image-hover-image {
+    opacity: 0.3;
+  }
+  
+  .image-a-tag:hover .middle-text {
+    opacity: 1;
+  }
+  
+  .text-show-on-hover {
+    font-size: 16px;
+    background-color: transparent;
+  }
+  .text-show-on-hover span {
+      color: #F5C518;
+      font-size: 25px;
+  }
+  .text-show-on-hover .text-rating {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px 0 28px 0;
+    position: relative;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-weight: bold;
+    color: #fff;
+  }
+  .text-about {
+    font-size: 20px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-weight: bold;
+    color: #fff;
+    max-height: 72px;
+    overflow: hidden;
+    border: 0px solid red;
+}
+
+    }
+    .non-touch .button-green-download2-big:hover {
+        background: #F5C518;
+    }
+    .home-content figure figcaption .button-green-download2-big {
+        margin-top: 10px;
+    }
+    .button-green-download2-big:hover {
+        color: #fff;
+        background: #b38c01;
+        margin: 0 auto 10px auto;
+    }
+    .button-green-download2-big {
+        background: #F5C518;
+        font-family: Arimo,Arial,Helvetica,"Lucida Grande",sans-serif;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        display: block;
+        font-weight: bold;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+        width: 130px;
+        padding: 8px 0;
+        margin: 0 auto;
+            margin-top: 0px;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 300ms ease;
+        transition: all 200ms ease;
+    }
+/*--------- movie img name year -----------*/
+.browse-movie-bottom {
+    border: 0px solid red;
+    height: 56px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+.images-movie {
+    width: calc(100% - 0px);
+    height: auto;
+    border-radius: 4px;
+}
+.images-movie:hover {
+    
+}
+.movie-name-span {
+    border: 0px solid red;
+    max-height: 39px;
+    overflow: hidden;
+}
+.movie-name-text {
+    color: var(--black-to-white);
+    text-decoration: none;
+    font-size: 15px;
+}
+.movie-name-text:hover {
+    color: var(--icon-color);
+}
+.browse-movie-year {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-left: 2px;
+}
+/*--------------- img and all size --------------*/
+.cointent-sub {
+    float: left;
+    border: 0px solid blue;
+    width: calc(230px - 20px);
+    margin: 10px 10px;
+}
+@media screen and (min-device-width: 0px) and (max-device-width: 600px){
+    .cointent-sub {
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1024px){
+    .cointent-sub {
+        width: calc(25% - 20px);
+    }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px){
+    .cointent-sub {
+        width: calc(20% - 20px);
+    }
+}
+@media screen and (min-device-width: 1201px) and (max-device-width: 1920px){
+    .cointent-sub {
+        width: calc(200px - 20px);
+    }
+}
+/*--------------- img and all size 2--------------*/
+.cointent-sub-home {
+    float: left;
+    border: 0px solid blue;
+    width: calc(230px - 20px);
+    height: 330px;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+@media screen and (min-device-width: 0px) and (max-device-width: 600px){
+    .cointent-sub-home {
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1024px){
+    .cointent-sub-home {
+        width: calc(25% - 20px);
+    }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px){
+    .cointent-sub-home {
+        width: calc(20% - 20px);
+    }
+}
+@media screen and (min-device-width: 1201px) and (max-device-width: 1920px){
+    .cointent-sub-home {
+        width: calc(200px - 20px);
+    }
+}

@@ -1,0 +1,521 @@
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="css/engine/magnet.css">
+  </head>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/BgPzk2hMmxGPS07rmps7xlrYr5Jmm7J-jCDtGjJ6FKbcpKWPqwXnN52efC3_1DsJMrB8ZInUKQ32mEkshacesAQSdWhOALyEEfksY5JaULVOMTocy8n1gehykpQmU4V97jtYCb0s=s40-p-k">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="//cdn.jsdelivr.net/g/lazysizes(lazysizes.min.js)" async=""></script>
+    <head>
+    <link rel="stylesheet" href="css/slider/style.css"> 
+    <link rel="stylesheet" href="css/color-change/color-change.css">
+    <link rel="stylesheet" href="css/suggest/suggest.css">
+  </head>
+  <body>
+     <input type="checkbox" id="check">
+      <!--header area start-->
+      <header>
+      <div class="icon-logo">
+        <label class="icon-show-large" for="check">
+        <i class="" id="sidebar_btn">
+          <div class="icon-bar-create"></div>
+          <div class="icon-bar-create"></div>
+          <div class="icon-bar-create"></div>
+        </i>
+        </label>
+        <label  class="icon-show-small" onclick="openSlideMenu()" >
+        <i class="" id="sidebar_btn">
+          <div class="icon-bar-create"></div>
+          <div class="icon-bar-create"></div>
+          <div class="icon-bar-create"></div>
+        </i>
+        </label>
+        <a href="index.php">
+          <div class="logo-image" src=""></div>
+        </a>
+      </div>
+      
+      <!-------Search PC-------------->
+      <link rel="stylesheet" href="css/search/style.css">
+  
+      <div class="search-box-border" >
+        <form id="searchForm">
+          <select id="selectSite">
+            <option value="https://unfriday.com/search_engine.php?search=">Engine</option>
+            <option value="https://unfriday.com/movies2.php?query_term=">Movies</option>
+          </select><input class="search-input" name="query_term" type="search" maxlength="128" id="query_term"  placeholder="Search..."/><button class="search-button" type="submit"><i class="fas fa-search search-icon-color"></i></button>
+        </form>
+        <div id="results"></div>
+      </div>
+  
+      <script type="text/javascript" src="js/search/jquery.js"></script>
+      <script type="text/javascript" src="js/search/auto.js"></script>
+      <script type="text/javascript" src="js/search/auto_suggest_jquery_ui.js"></script>
+      <script type="text/javascript" src="js/search/search_select.js"></script>
+      <!-------Search Pc END------->
+      <!------------search moblie-------------->
+      <link rel="stylesheet" href="css/search/style-m.css">
+        <div class="primary">
+          <i class="material-icons search-mobile-icon" id="search">search</i>
+        </div>
+        <div class="secondary" id="secondary-header">
+            <i class="material-icons search-mobile-icon" id="back-arrow">arrow_back</i>
+                <div class="search-box-border-m" >
+                  <form id="searchFormMoblie">
+                    <select id="selectSiteMobile">
+                      <option value="https://unfriday.com/search_engine.php?search=">Engine</option>
+                      <option value="https://unfriday.com/movies2.php?query_term=">Movies</option>
+                    </select><input class="search-input-m" name="search_query_mobile" type="search" maxlength="128" id="query_term2"  placeholder="Search..."/><button class="search-button-m" type="submit"><i class="fas fa-search search-icon-color"></i></button>
+                  </form>
+                </div>
+                <div id="results2"></div>
+        </div>
+      <script type="text/javascript" src="js/search-m/search_select.js"></script>
+      <script  src="js/search/script-m.js"></script>
+      <script type="text/javascript" src="js/search-m/jquery.js"></script>
+      <script type="text/javascript" src="js/search-m/auto.js"></script>
+      <script type="text/javascript" src="js/search-m/search_select.js"></script>
+      <!------------search moblie END-------------->
+        <div class="user-mode">
+        <select class="select__input" id="selTheme">
+                  <option value="auto">Auto Theme</option>
+                  <option value="light">Light Theme</option>
+                  <option value="dark">Dark Theme</option>
+              </select>
+        </div>
+      </header>
+      <!--header area end-->
+      <!--sidebar start-->   <!----class="icon-active"--->
+      <div class="sidebar">
+        <a href="#" ><i class="material-icons">home</i><span><sup>Home</sup></span></a>
+        <a href="#"><i class="material-icons">explore</i><span><sup>Discover</sup></span></a>
+      <a href="#"><i class="material-icons" >cast</i><span><sup>Live TV</sup></span></a>
+      <br><hr><br>
+        <a href="movies.php"><i class="material-icons">local_movies</i><span><sup>Movies</sup></span></a>
+      <a href="#"><i class="material-icons">live_tv</i><span><sup>TV-Shows</sup></span></a>
+      <a href="#"><i class="material-icons">face</i><span><sup>Anime</sup></span></a>
+      <a href="#"><i class="material-icons">aspect_ratio</i><span><sup>Documentaries</sup></span></a>
+      </div>
+      <!--sidebar end-->
+    <!--side navifation hidden Start---->
+        <div id="side-menu-hidden" class="side-nav-hidden">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">
+          <i class="" id="sidebar_btn">
+            <div class="icon-bar-create"></div>
+            <div class="icon-bar-create"></div>
+            <div class="icon-bar-create"></div>
+          </i>
+        </a>
+        
+        <a href="#" ><i class="material-icons">home</i><span><sup>Home</sup></span></a>
+        <a href="#"><i class="material-icons">explore</i><span><sup>Discover</sup></span></a>
+        <a href="#"><i class="material-icons" >cast</i><span><sup>Live TV</sup></span></a>
+          <br><hr><br>
+        <a href="movies.php"><i class="material-icons">local_movies</i><span><sup>Movies</sup></span></a>
+        <a href="#"><i class="material-icons">live_tv</i><span><sup>TV-Shows</sup></span></a>
+        <a href="#"><i class="material-icons">face</i><span><sup>Anime</sup></span></a>
+        <a href="#"><i class="material-icons">aspect_ratio</i><span><sup>Documentaries</sup></span></a>
+      </div>
+    <!-------------Javascript----------------->
+    <script  src="js/color-change/color-change.js"></script>
+    <script  src="js/header/header.js"></script>
+  </body><body>
+    <div class="content">
+      <div class="top-head"></div>
+        <div class="full_page_details">
+          
+  
+              4382145/Bad-Boys-for-Life-2020-720p-WEBRip-YTS-YIFY/
+                <br>
+              B5B09DC8BBC5382338A4052A90B43A84A53FBFA4&dn=Bad+Boys+for+Life+%282020%29+%5B720p%5D+%5BWEBRip%5D+%5BYTS%5D+%5BYIFY%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce
+                <br>
+              <!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Download Bad Boys for Life (2020) [720p] [WEBRip] [YTS] [YIFY] Torrent | 1337x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/jquery-ui.css">
+  <link rel="stylesheet" href="/css/icons.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/scrollbar.css">
+  <link rel="stylesheet" href="/css/style10.2021-08-23-07.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src = "/js/html5shiv.js"></script><![endif]-->
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript" id="antiClickjackJS">
+  if (self === top) {
+  var antiClickjack = document.getElementById("antiClickjack");
+  antiClickjack.parentNode.removeChild(antiClickjack);
+  } else {
+  top.location = self.location;
+  }
+  </script>
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+  <body>
+  <div class="mobile-menu"></div>
+  <div class="top-bar">
+  <div class="container">
+  <ul class="top-bar-nav">
+  <li><a href="/register">Register</a></li>
+  <li class="active"><a href="/login">Login</a></li>
+  </ul>
+  </div>
+  </div>
+  <header>
+  <div class="container">
+  <div class="clearfix">
+  <div class="logo"><a href="/home/"><img alt="logo" src="/images/logo.svg"></a></div>
+  <a href="#" class="navbar-menu"><span></span><span></span><span></span></a>
+  <div class="search-box">
+  <form id="search-form" method="get" action="/srch">
+  <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control" autocomplete="off">
+  <button type="submit" class="btn btn-search"><i class="flaticon-search"></i><span>Search</span></button>
+  </form>
+  </div>
+  </div>
+  <nav>
+  <ul class="main-navigation">
+  <li class="active"><a href="/home/" title="Go to Home">Home</a></li>
+  <li><a href="/upload" title="Upload Torrent File">Upload</a></li>
+  <li><a href="/rules" title="Rules">Rules</a></li>
+  <li><a href="/contact" title="Contact 1337x">Contact</a></li>
+  <li><a href="/about" title="About us">About us</a></li>
+  </ul>
+  </nav>
+  </div>
+  </header>
+  <main class="container">
+  <div class="row">
+  <aside class="col-3 pull-right">
+  <div class="list-box">
+  <h2>Browse torrents</h2>
+  <ul>
+  <li><a href="/trending" title="Trending Torrents"><i class="flaticon-trending"></i> Trending Torrents</a></li>
+  <li><a href="/movie-library/1/" title="Movie Library"><i class="flaticon-movie-library"></i> Movie library</a></li>
+  <li><a href="/series-library/a/1/" title="TV Library"><i class="flaticon-tv-library"></i> TV library</a></li>
+  <li><a href="/new-episodes/day/1/" title="New TV Episodes"><i class="flaticon-tv"></i> New TV Episodes</a></li>
+  <li><a href="/top-100" title="Top 100 Torrents"><i class="flaticon-top"></i> Top 100 Torrents</a></li>
+  <li><a href="/cat/Anime/1/" title="Anime"><i class="flaticon-ninja-portrait"></i> Anime</a></li>
+  <li><a href="/cat/Apps/1/" title="Applications"><i class="flaticon-apps"></i> Applications</a></li>
+  <li><a href="/cat/Documentaries/1/" title="Documentaries"><i class="flaticon-documentary"></i> Documentaries</a></li>
+  <li><a href="/cat/Games/1/" title="Games"><i class="flaticon-games"></i> Games</a></li>
+  <li><a href="/cat/Movies/1/" title="Movies"><i class="flaticon-movies"></i> Movies</a></li>
+  <li><a href="/cat/Music/1/" title="Movies"><i class="flaticon-music"></i> Music</a></li>
+  <li><a href="/cat/Other/1/" title="Others"><i class="flaticon-other"></i> Other</a></li>
+  <li><a href="/cat/TV/1/" title="Television"><i class="flaticon-tv"></i> Television</a></li>
+  <li><a href="/cat/XXX/1/" title="XXX"><i class="flaticon-xxx"></i> XXX</a></li>
+  </ul>
+  </div>
+  <div class="list-box hidden-sm">
+  <h2>1337x Links</h2>
+  <ul class="list">
+  <li><a target="_blank" href="https://www.1337x-forum.eu/"> 1337x Forum</a></li>
+  <li><a target="_blank" href="https://chat.1337x.to"> 1337x Chat</a></li>
+  <li><a target="_blank" href="https://orangepix.is">OrangePix</a></li>
+  <li><a target="_blank" href="https://njal.la"> Njalla</a></li>
+  <li><a target="_blank" href="https://torrentz2.is"> Torrentz2</a></li>
+  <li><a target="_blank" href="https://www.limetorrents.cc"> Limetorrents</a></li>
+  <li><a target="_blank" href="https://www.torrentfunk.com"> TorrentFunk</a></li>
+  <li><a target="_blank" href="https://www.torlock.com"> Torlock</a></li>
+  </ul>
+  </div>
+  </aside>
+  <script>
+  function count(t){return $.ajax({async:!1,type:"POST",url:"/dltrack/4382145/",data:{dst:t.href,src:document.location.href,torid:"4382145"}}),!1}
+  </script>
+  <div class="col-9 page-content">
+  <div class="box-info torrent-detail-page  vpn-info-wrap">
+  <div class="box-info-heading clearfix"><h1> Bad Boys for Life (2020) [720p] [WEBRip] [YTS] [YIFY] </h1>
+  </div>
+  <div class="l931305a23ebd17280951000a3597f1b36ed432e5 no-top-radius">
+  <div class="lfb82d098332d20f4dda21e0f3f24d532ad9b32b0 clearfix">
+  <ul class="l26708b26875bc1c38560077bb6d5a0c8c302b4d3 l9d1d860416a409dde8b714d51cb7099e1f958f24">
+  <li><a class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 l80af197c9f10a8eb2d9a3e77a6b80a54667abd69" href="magnet:?xt=urn:btih:B5B09DC8BBC5382338A4052A90B43A84A53FBFA4&dn=Bad+Boys+for+Life+%282020%29+%5B720p%5D+%5BWEBRip%5D+%5BYTS%5D+%5BYIFY%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce" onclick="javascript: count(this);"><span class="icon"><i class="flaticon-l19f8b704ded62a1fa5a9eb2b3bafca001023e97b"></i></span>Magnet Download</a> </li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li class="dropdown">
+  <a data-toggle="dropdown" class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 l003612c9f304cd367ebd4deadd5b75786961376d" onclick="javascript: count(this);" href="#"><span class="icon"><i class="flaticon-l39098a58526ea686ab2f2059416e6ccdf42e542b"></i></span>Torrent Download</a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  <li><a class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 lbed6358e1bfad1eee9e4c6e10a5c391c3f21ee88" target="_blank" href="http://itorrents.org/torrent/B5B09DC8BBC5382338A4052A90B43A84A53FBFA4.torrent"><span class="icon"><i class="flaticon-l2ca22d9d274e387957b010eb42a0de41de5920ee"></i></span>ITORRENTS MIRROR</a> </li>
+  <li><a class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 lbed6358e1bfad1eee9e4c6e10a5c391c3f21ee88" target="_blank" href="http://torrage.info/torrent.php?h=B5B09DC8BBC5382338A4052A90B43A84A53FBFA4"><span class="icon"><i class="flaticon-l2ca22d9d274e387957b010eb42a0de41de5920ee"></i></span>TORRAGE MIRROR</a></li>
+  <li><a class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 lbed6358e1bfad1eee9e4c6e10a5c391c3f21ee88" target="_blank" href="http://btcache.me/torrent/B5B09DC8BBC5382338A4052A90B43A84A53FBFA4"><span class="icon"><i class="flaticon-l2ca22d9d274e387957b010eb42a0de41de5920ee"></i></span>BTCACHE MIRROR</a></li>
+  <li><a class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 l80af197c9f10a8eb2d9a3e77a6b80a54667abd69" href="magnet:?xt=urn:btih:B5B09DC8BBC5382338A4052A90B43A84A53FBFA4&dn=Bad+Boys+for+Life+%282020%29+%5B720p%5D+%5BWEBRip%5D+%5BYTS%5D+%5BYIFY%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce"><span class="icon"><i class="flaticon-l19f8b704ded62a1fa5a9eb2b3bafca001023e97b"></i></span>None Working? Use Magnet</a></li>
+  </ul>
+  </li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li><a id="l26a3c362de8133ac163367c178ea5737745b0694" class="l1cdacbaaaaefec04801d24c7a4190f0705ff0f4c l273379f99477dbe15bf417f0b57e5267b2224995 l26a3c362de8133ac163367c178ea5737745b0694" href="https://ttf.trmobc.com/aff_ad?campaign_id=9&aff_id=461"><span class="icon"><i class="flaticon-l382f760e6db21deef3a3df9f6fffc771bb16cb04"></i></span>An&zwnj;on&zwnj;ymous Download</a> </li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  <li style="margin-top:0px;"></li>
+  </ul>
+  <ul class="list">
+  <li> <strong>Category</strong> <span>Movies</span> </li>
+  <li> <strong>Type</strong> <span>HD</span> </li>
+  <li> <strong>Language</strong> <span>English</span> </li>
+  <li> <strong>Total size</strong> <span>1.1 GB</span> </li>
+  <li> <strong>Uploaded By</strong> <span><small class="user"></small> <a href="/user/YTSAGx/">YTSAGx</a></span> </li>
+  </ul>
+  <ul class="list">
+  <li> <strong>Downloads</strong> <span>91953</span> </li>
+  <li> <strong>Last checked</strong> <span>1 hour ago</span> </li>
+  <li> <strong>Date uploaded</strong> <span>1 year ago</span> </li>
+  <li> <strong>Seeders</strong> <span class="seeds">16268</span> </li>
+  <li> <strong>Leechers</strong> <span class="leeches">10053</span> </li>
+  </ul>
+  </div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div class="l4bec170d02b19a99d64ca3919c74deae53631aac"><a id="l4bec170d02b19a99d64ca3919c74deae53631aac" href="https://ttf.trmobc.com/aff_ad?campaign_id=9&aff_id=461"><span class="icon"><i class="flaticon-l382f760e6db21deef3a3df9f6fffc771bb16cb04"></i></span>Your IP Address is <strong class="l4252bad4b20e5786b17d651b94400dca62a6a6b1"></strong> Location is <strong class="lfc32a841da6c4bf3f5d6dffa8789bbd2c7420100"></strong> - Your ISP and Government can track your torrent activity! Hide your IP with a VPN!</a></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div class="manage-box">
+  <ul class="category-name">
+  <li><a href="/search/YTS/1/">YTS</a></li>
+  <li><a href="/search/YIFY/1/">YIFY</a></li>
+  <li><a href="/search/Movies/1/">Movies</a></li>
+  </ul>
+  <div class="infohash-box">
+  <p> <strong>Infohash :</strong> <span>B5B09DC8BBC5382338A4052A90B43A84A53FBFA4</span></p>
+  </div>
+  </div>
+  <div id="M713606ScriptRootC1137331"></div>
+  <script src="https://jsc.adskeeper.com/1/3/1337x.to.1137331.js" async></script>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div style="display: none;"></div>
+  <div class="torrent-tabs">
+  <ul class="tab-nav clearfix">
+  <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+  <li role="presentation"><a href="#files" aria-controls="files" role="tab" data-toggle="tab">Files</a></li>
+  <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments<span class="active">8</span></a></li>
+  <li role="presentation" class="hidden-xs"><a href="#tracker-list" aria-controls="tracker-list" role="tab" data-toggle="tab">Tracker list</a></li>
+  </ul>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="description">
+  <p><br /><strong>YTS.MX: YIFY Movies (the only official YIFY site) at <a target="_blank" href="https://yts.mx">https://yts.mx</a> </strong><br /><br /><strong>Bad Boys for Life (2020) [720p] [WEBRip] [YTS] [YIFY] </strong><br />Marcus and Mike have to confront new issues (career changes and midlife crises), as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.<br /><br /><a target="_blank" href="https://yts.mx/movie/bad-boys-for-life-2020">https://yts.mx/movie/bad-boys-for-life-2020</a><br /><br />* The following are 720p quality thumbs just as exemplification*<br /><a target="_blank" href="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/large-screenshot1.jpg"><img src="/images/profile-load.svg" data-original="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot1.jpg" class="img-responsive descrimg lazy" /></a> <a target="_blank" href="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/large-screenshot2.jpg"><img src="/images/profile-load.svg" data-original="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot2.jpg" class="img-responsive descrimg lazy" /></a> <a target="_blank" href="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/large-screenshot3.jpg"><img src="/images/profile-load.svg" data-original="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot3.jpg" class="img-responsive descrimg lazy" /></a><br /><br />Download newest official YIFY movies first from <strong><a target="_blank" href="https://yts.mx">https://yts.mx</a> </strong> only!</p>
+  </div>
+  <div role="tabpanel" class="tab-pane file-content" id="files">
+  <h2>Files: </h2>
+  <span class="head"><i class="flaticon-folder"></i>Bad Boys For Life (2020) [720p] [WEBRip] [YTS.MX]</span>
+  <ul>
+  <li><i class="flaticon-movies"></i>Bad.Boys.For.Life.2020.720p.WEBRip.x264.AAC-[YTS.MX].mp4 (1.1 GB)</li>
+  <li><i class="flaticon-images"></i>www.YTS.MX.jpg (52.0 KB)</li>
+  </ul>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="comments">
+  <h2>Comments</h2>
+  <div class="comment-box">
+  <div id="comment"></div>
+  </div>
+  <div id="Pagination" class="pagination">
+  </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tracker-list">
+  <h3>Code: </h3>
+  <ul>
+  <li><span class="icon"><i class="flaticon-href-link"></i></span> udp://tracker.coppersurfer.tk:6969/announce</li>
+  <li><span class="icon"><i class="flaticon-href-link"></i></span> udp://9.rarbg.com:2710/announce</li>
+  <li><span class="icon"><i class="flaticon-href-link"></i></span> udp://p4p.arenabg.com:1337</li>
+  <li><span class="icon"><i class="flaticon-href-link"></i></span> udp://tracker.internetwarriors.net:1337</li>
+  <li><span class="icon"><i class="flaticon-href-link"></i></span> udp://tracker.opentrackr.org:1337/announce</li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </main>
+  <footer>
+  <div class="bitcoin">
+  <div class="bitcoin-icon-wrap">
+  <span class="bitcoin-icon"><i class="flaticon-bitcoin red"></i></span>
+  </div>
+  <span class="bitcoin-text"><span>Bitcoin Donate: </span><a href="bitcoin:3Qpdm4ckJ64irx1Nuyw9ZCCvc2qxoqkuBY">3Qpdm4ckJ64irx1Nuyw9ZCCvc2qxoqkuBY</a></span>
+  </div>
+  <a class="scroll-top" href="#"><i class="flaticon-up"></i></a>
+  <ul>
+  <li><a href="/">Home</a></li>
+  <li class="active"><a href="/home/">Full Home Page</a></li>
+  <li><a href="/contact">Dmca</a></li>
+  <li><a href="/contact">Contact</a></li>
+  </ul>
+  <p class="info">1337x 2007 - 2021</p>
+  </footer>
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/auto-searchv2.js"></script>
+  <div class="modal fade modal-custom align-center" id="alert-popup" tabindex="-1" role="dialog" aria-labelledby="AlertPopup">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="flaticon-logout"></i></a>
+  <h4 class="modal-title" id="AlertPopup">You will be redirected in 3 seconds.</h4>
+  </div>
+  <div class="modal-body">
+  <p>You are leaving 1337x to a website that is not affiliated with us in any way.</p>
+  <p>We cannot guarantee for security of a linked website.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="/js/equalheight.js"></script>
+  <script src="/js/scrollbar.js"></script>
+  <script src="/js/tab.js"></script>
+  <script src="/js/lazyload.min.js"></script>
+  <script src="/js/comment.js"></script>
+  <script src="/js/pagination.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/main9.b01c83174512b963207f7c643708544a.js"></script>
+  <script>
+  function vpn_height(){
+    vpn_info_height = $('.vpn-info').outerHeight() - 6 + 29;
+    $('.vpn-info-wrap .torrent-detail .shadow').css('bottom', - vpn_info_height)
+  }
+    function resizeHeight() {
+      jQuery('.js-height .js-col').maxHeight();
+    }
+    resizeHeight();
+    $(window).resize(function(){
+      vpn_height();
+      resizeHeight();
+    })
+  
+    function torrent_desc_width(){
+      torrent_wrap_width = $('.torrent-detail-page .torrent-detail').width();
+      torrent_image_width = $('.torrent-image-wrap').outerWidth();
+      torrent_detail_width = $('.torrent-detail-info').outerWidth();
+      torrent_total_width = torrent_wrap_width - torrent_image_width - 1;
+      $('.torrent-detail-info').css('min-width', torrent_total_width);
+    }
+  
+    function  modal_resize(){
+      window_height = $(window).height();
+      modal_height = $('.modal.in .modal-dialog').outerHeight();
+      total_height = window_height - modal_height;
+      $('.modal.in .modal-dialog').css('margin-top', total_height / 2);
+    }
+    
+    $('.modal').on('shown.bs.modal', function (e) {
+      modal_resize();
+    })
+    modal_resize();
+    
+    $(window).resize(function(){
+      torrent_desc_width();
+    });
+  
+    $('a[data-toggle="tab"]').tab();
+  
+    $(window).load(function() {
+      vpn_height();
+      torrent_desc_width();
+      $(".content-row").mCustomScrollbar();
+    });
+  
+    $("img.lazy").lazyload({
+      effect : "fadeIn",
+      placeholder : '/images/profile-load.svg'
+    });
+    
+    $('a[href="#comments"]').on('shown.bs.tab', function () {
+      $("img.lazy").lazyload({
+        effect : "fadeIn",
+        placeholder : '/images/profile-load.svg'
+      });
+    });
+    
+  
+    var modal_url;
+    $('.js-modal-url').click(function(){
+      modal_url = $(this).attr('href')
+    });
+    
+    $('#alert-popup').on('shown.bs.modal', function (e) {
+      setTimeout(function() {
+         window.location.href = modal_url;
+      }, 3000); // Chnage location Time
+    })
+    
+  
+    
+  var members;
+  $(window).load(function() {
+          $.ajax({
+         type: "GET",
+          crossDomain: true,
+          url: "//cdn.1337x.to/ip3.php",
+          dataType: "json",
+          success: function(data) {
+            $('.l38bbf29851c53a8459924e111678c7162e2ef175').html(data.country);
+            $('.la37938cd13ee6b80216c345adc533101c39a9b66').html(data.ip);
+            vpn_height();
+          }
+      });
+      
+        var url = "/comments.php?torrentid=4382145" ;
+      $.getJSON(url, function(result) {
+          console.log(result);
+          members = result;
+          buildComment(result);
+  
+      }).done(function(){
+      });
+  });  
+    
+  </script>
+  
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6831ed7cbf8d4607',m:'2de7ad96ecd250912b1d46dceee8025937f80806-1629696404-1800-AZ16xGugfimAH/KgdCYj6iq4d+xBT51ceqx4YRdBVMok/au1I2IM0DNW+aPu/uJl/4SirqhVeGoa2BpiDWjKPWKIhLvDINdI7V+I+Q0odSiIPv1VwE0P5hm8lDvT079A2VuQw7k14V1ZXW6UQceGqZbuYB+Qf1r+/rgKG8wWmQZFo/e0qmfbWOjGenmNjtfqrg==',s:[0x705ba3e487,0x006a923c42],}})();</script></body>
+  </html>
+  
+              
+  <div role="tabpanel" class="tab-pane active" id="description">
+  <p><br /><strong>YTS.MX: YIFY Movies (the only official YIFY site) at <a target="_blank" href="https://yts.mx">https://yts.mx</a> </strong><br /><br /><strong>Bad Boys for Life (2020) [720p] [WEBRip] [YTS] [YIFY] </strong><br />Marcus and Mike have to confront new issues (career changes and midlife crises), as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.<br /><br /><a target="_blank" href="https://yts.mx/movie/bad-boys-for-life-2020">https://yts.mx/movie/bad-boys-for-life-2020</a><br /><br />* The following are 720p quality thumbs just as exemplification*<br /><a target="_blank" href="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/large-screenshot1.jpg"><img class="responsive" src="get_img.php?images=https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot1.jpg" alt="loading" data-original="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot1.jpg" class="img-responsive descrimg lazy" /></a> <a target="_blank" href="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/large-screenshot2.jpg"><img class="responsive" src="get_img.php?images=https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot2.jpg" alt="loading" data-original="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot2.jpg" class="img-responsive descrimg lazy" /></a> <a target="_blank" href="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/large-screenshot3.jpg"><img class="responsive" src="get_img.php?images=https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot3.jpg" alt="loading" data-original="https://img.yts.mx/assets/images/movies/bad_boys_for_life_2020/medium-screenshot3.jpg" class="img-responsive descrimg lazy" /></a><br /><br />Download newest official YIFY movies first from <strong><a target="_blank" href="https://yts.mx">https://yts.mx</a> </strong> only!</p>
+  </div>
+  <div role="tabpanel" class="tab-pane file-content" id="files">
+  <h2>Files: </h2>
+  <span class="head"><i class="flaticon-folder"></i>Bad Boys For Life (2020) [720p] [WEBRip] [YTS.MX]</span>
+  <ul>
+  <li><i class="flaticon-movies"></i>Bad.Boys.For.Life.2020.720p.WEBRip.x264.AAC-[YTS.MX].mp4 (1.1 GB)</li>
+  <li><i class="flaticon-images"></i>www.YTS.MX.jpg (52.0 KB)</li>
+  </ul>
+  </div>
+        </div>
+    </div>
+  

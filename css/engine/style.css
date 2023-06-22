@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+/* ------- Next Previous ---------- */
+.line-hole {
+    width: 100%;
+    background-color: var(--hr);
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.next-previous {
+    width: 228px;
+    margin: 15px auto;
+    height: 80px;
+    border: 0px solid red;
+    overflow: hidden;
+}
+.next-previous a {
+    float: left;
+    margin: 0 0px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--background-color-alt);
+    background-color: var(--icon-color);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.next-previous a:hover {
+    background-color: var(--text-color);
+}
+.next-previous-space {
+    padding: 20px;
+    float: left;
+    border: 0px solid red;
+}
+/* ------- Next Previous END ---------- */
+/* -------------- Table --------------- */
+table {
+    border: 0px solid red;
+    margin:25px auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: hidden;
+}
+th {
+    border: 0px solid blue;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 16px 0px;
+    background-color: var(--table-th);
+    font-weight: 500;
+}
+.date02 {
+    color: #fff;
+    border-left: 0px solid red;
+    font-weight: 500;
+}
+tr:nth-child(even){
+	background-color: 	var(--table-td-child);
+}
+tr {
+	background-color: 	var(--table-td);
+}
+tr:hover {
+}
+td {
+    border: 0px solid black;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    word-break: break-all;
+    padding: 15px 2px;
+    color: var(--text-color);
+}
+td a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+}
+td a:hover {
+    text-decoration: underline;
+}
+.seeds, .leeches, .size, .dateadded {
+    text-align: center;
+}
+.seeds {
+    color: #4eb41c;
+    font-weight: 500;
+}
+.leeches {
+    color: #d63600;
+    font-weight: 500;
+}
+.coll-4{
+	border-left: 1px solid yellowgreen;
+
+    font-weight: 500;
+}
+/* uploader display */
+.uploader,.coll-5{
+    display: none;
+}
+/* -------------- Table END --------------- */

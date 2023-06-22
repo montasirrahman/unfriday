@@ -1,0 +1,50 @@
+.feature_text {
+	position: absolute;
+	top: -25px;
+	left: 0px;
+	margin: 0 0 0 0px ;
+	padding: 1px 0px 2px 5px;
+	color: var(--text-color);
+	font-family: 'Roboto', sans-serif;
+	border-left: 4px solid #f5c518;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 0px;
+}
+/*--------------- img and all size 2--------------*/
+
+.cointent-sub-home2 {
+    border: 0px solid blue;
+    width: calc(230px - 20px);
+    height: 330px;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+@media screen and (min-device-width: 0px) and (max-device-width: 600px){
+    .cointent-sub-home2 {
+        width: calc(50% - 20px);
+        float: left;
+    }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1024px){
+    .cointent-sub-home2 {
+        width: calc(25% - 20px);
+        float: left;
+    }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px){
+    .cointent-sub-home2 {
+        width: calc(20% - 20px);
+        float: left;
+    }
+}
+@media screen and (min-device-width: 1201px) {
+    .cointent-sub-home2 {
+        width: calc(200px - 20px);
+    }
+    .featureInline {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+}

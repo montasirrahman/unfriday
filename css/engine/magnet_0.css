@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.all_things {
+    border: 0px solid red;
+}
+.type_1 {
+    border: 0px solid red;
+}
+.type_2 {
+    border: 0px solid red;
+}
+.type_3 {
+    border: 0px solid red;
+}
+.full_page_details {
+	width: 100%;
+	overflow-x: hidden;
+}
+/*-----------------------Torrent Button-----------------*/
+.container_3 {
+	width: 282px;
+	border: 0px solid green;
+	margin: 10px 0;
+	float: right;
+}
+@media screen and (max-width: 700px) {
+	.container_3 {
+		float: none;
+		margin: 10px auto 20px auto;
+		display: block;
+	}
+}
+.magnet_3 {
+	padding: 2px 66.8px;
+}
+.torrent_3 {
+	padding: 2px 68.2px;
+}
+.stream_3 {
+	padding: 2px 69.8px;
+}
+.itorrent_3 {
+	padding: 2px 75px;
+}
+.t_3 {
+	padding: 2px 78px;
+}
+.b_3 {
+	padding: 2px 76.3px;
+}
+.row_3 {
+  margin-top: 0px;
+}
+
+#drop_view {
+  display: none;
+}
+#drop_view.is_active {
+  display: block;
+}
+#drop_view .list-group-item {
+  cursor: pointer;
+}
+#drop_view .list-group-item:hover {
+  background-color: #f6f6f6;
+}
+/*---*/
+.stream_q, .torrent_q, .magnet_q {
+	text-decoration: none;
+	background-color: var(--link-header);
+    Color: var(--black-to-white);
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	margin: 0 0px;
+	border: 3px solid var(--black-to-white);
+    font-weight: 400;
+	border-radius: 4px;
+	line-height: 2.2;
+	background: var(--background-color-alt);
+}
+.stream_q:hover, .torrent_q:hover, .magnet_q:hover {
+	background-color: var(--link-background);
+}
+/*-----------------------Torrent Button END-----------------*/
+/*name*/
+.name_torrent {
+	font-family: 'Roboto', sans-serif;
+	Color: var(--black-to-white);
+	font-weight: 600;
+	font-size: 20px;
+	padding: 2px 0px 0px 8px;
+	margin: 25px 0;
+	/*letter-spacing: 1px;*/
+}
+.hashinfo {
+	font-family: 'Roboto', sans-serif;
+	Color: var(--text-color);
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0 20px; 0;
+	overflow: hidden;
+}
+.cata_torrent {
+	font-family: 'Roboto', sans-serif;
+	Color: var(--text-color);
+	font-weight: 500;
+	font-size: 14px;
+	list-style: none;
+	border: 0px solid green;
+	max-width: 100%;
+	width: 400px;
+	height: 160px;
+	padding: 5px;
+}
+.cata_torrent a {
+	display: none;
+}
+.inside_ul_1 {
+	border: 0px solid red;
+	float: left;
+}
+.inside_ul_1 strong {
+	color: var(--black-blue);
+	font-weight: 500;
+}
+.inside_ul_2 {
+	border: 0px solid red;
+	float: right;
+}
+.inside_ul_2 strong {
+	color: var(--black-blue);
+	font-weight: 500;
+}
+/*imdb info box*/
+.imdb_torrent {
+	border: 0px solid green;
+	 height: 182px;
+	margin: 0 5px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+}
+/* width */
+.imdb_torrent ::-webkit-scrollbar {
+  width: 5.5px;
+}
+
+/* Track */
+.imdb_torrent ::-webkit-scrollbar-track {
+  background-color: var(--trim-color);
+}
+ 
+/* Handle */
+.imdb_torrent ::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+.imdb_torrent ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--black-to-white);
+}
+.img_imdb_torrent {
+	border: 0px solid blue;
+	float: left;
+	height: 182px;
+	border-radius: 0px;
+}
+.imdb_info_torrent {
+	border: 0px solid red;
+	height: 172px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 0px 10px 10px 10px;
+	background-color: var(--trim-color);
+}
+.imdb_name_torrent {
+	font-family: 'Roboto', sans-serif;
+	Color: var(--text-color);
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0px;
+}
+.imdb_kirokom {
+	font-family: 'Roboto', sans-serif;
+	Color: var(--text-color);
+	font-weight: 400;
+	font-size: 13px;
+	margin: 0px
+}
+.imdb_dis {
+	font-family: 'Roboto', sans-serif;
+	Color: var(--text-color);
+	font-weight: 500;
+	font-size: 14px;
+	margin: 0px
+}
+
+/*Big text discription*/
+.q_s_t {
+    padding: 10px 5px;
+    color: var(--black-to-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+	margin-top: 50px;
+}
+.q_s_t_border {
+    border-left: 4px solid #f5c518;
+    border-radius: 4px;
+    font-size: 23px;
+    margin-right: 6px;
+}
+/* Description contant*/
+.match_data_all {
+	color: var(--black-to-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+	background: var(--background-color-alt);
+	padding: 10px;
+	margin: 0 1%;
+	border-radius: 4px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	width: 98%;
+	max-width: 1200px;
+}
+#files {
+	display: none;
+}
+.files_torrent {
+	color: var(--black-to-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+	margin: 0 10px;
+}
+.files_torrent li i {
+	display: none;
+}
+.files_torrent ul { 
+	list-style-type: none;
+	border: 0px solid green;
+	margin: 0;
+}
+
+.files_torrent li {
+	border-bottom: 1px solid #f5c518;
+	border-radius: 0px;
+	list-style: none;
+}
+.files_torrent li:hover {
+	color: var(--black-to-white);
+	border-left: 10px solid #f5c518;
+	padding-left: 8px;
+	border-bottom: 1px solid #f5c518;
+}
+.files_torrent span {
+	color: var(--black-to-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.problem_files {
+	float: left; 
+	border: 0px solid red; 
+	width: 1200px; 
+	max-width: 100%;
+}

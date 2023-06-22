@@ -1,0 +1,149 @@
+:root {
+	--dark-black-yellow: #f5c518;
+	--dark-black-blue: #5799ef;
+    --dark-background-color: #131417;
+    --dark-background-color-alt: #1E1F26;
+    --dark-trim-color: #333333;
+    --dark-text-color: #ffffffb3;
+	--dark-icon-color: #f1f1f1;
+	--dark-icon-menu: #373737;
+	--dark-hr: #373737;
+	--dark-icon-text-hover: #000;
+	--dark-icon-active: #000;
+	--dark-black-to-white: #fff;
+	--dark-#F5F5F5-to-#111: #F5F5F5;
+	--dark-search-input: #252830;
+	--dark-table-td-child: #1D2838;
+	--dark-table-td: #171A21;
+	--dark--table-th: #171A21;
+	--dark-movie-background-picture: url(); 
+	--dark-link-background: #000;
+	--dark-link-header: #1F2229;
+	--dark-yellow-to-white: #fff;
+	--dark-search-border: #131417;
+	--dark-search-background: #131417;
+	--dark-search-background-b: #131417;
+	--dark-rgb-to-rgb: rgb(255 255 255 / 0);
+	
+	--logo: url(https://lh3.googleusercontent.com/3DjCjHYxfzuoLaSmnf2ep9Rd4BjTqSXfBagZe810i8IIsGz1eSPNGp-r6V1pU6a42g_s4ETCZZEvEo8MvUI0yZ2kUg9iOGDmMp1JOBKdABonmjq_rwwnN4oZRmQGLXR4_-hSKY2cpA=w2400) no-repeat;
+
+	--theme-logo:  url('https://lh3.googleusercontent.com/jbPogA4xl1VcRWCVNGsaGFUxYjjuA4__3HJNf8OYHUDSs0jOlHdJQSj6sdUgBDeHliEjmLXABU7jUI_l3lLN-kmyRE8smpkU1WNUXyZ2x0QAdaPVNx_wGj3oJxQJ70qWGwfpa5ii=s24-p-k');
+}
+/*  #333    to #f9f9f9 var(--background-color)
+	#101010 to #fff    var(--background-color-alt)
+*/
+body {
+    /* Light Theme */
+	--black-yellow: #333;
+	--black-blue: #333;
+    --background-color: #f9f9f9;
+    --background-color-alt: #fff;
+    --trim-color: #dddddd;
+    --text-color: #333333;
+	--icon-color: #606060;
+	--icon-menu: #f1f1f1;
+	--hr: #E5E5E5;
+	--icon-text-hover: #F2F2F2;
+	--icon-active: #E5E5E5;
+	--black-to-white: #000;
+	--#F5F5F5-to-#111: #F5F5F5;
+	--search-input: #fff;
+	--table-td-child: #F0F0F0;
+	--table-td: #DDDDDD;
+	--table-th: #979797;
+	--movie-background-picture: url();
+	--link-background: rgb(235, 235, 235);
+	--link-header: #eee;
+	--yellow-to-white: #F5C518;
+	--search-border: #BEBEBE;
+	--search-background: #fff;
+	--search-background-b: #EFEFEF;
+	--rgb-to-rgb: rgb(0 0 0 / 0.2);
+	
+	--logo: url(https://lh3.googleusercontent.com/x56wV2fckGPNPJu70te9MVjZ_ZhnEBIj8Vzlh5F_NAonxmPnDTLiQ4sUXAMRddVEEzC9pUuNC44SdAr5s2dcl8U38ObxE959HBjNzH3CNWzPEe6vnbxDLoyxBvtcSc351pvexnW2=w2400) no-repeat;
+
+	--theme-logo:  url('https://lh3.googleusercontent.com/b2xUqX4d1A0c2MEiwZQyGdFak5dSLSKq2596t5xztFmsxC681axdivaknAFRC_1x88n9u9hgGruN6vGnYKwyESaxTq-YRWOOxtTYTQXQFnghMEv1quxluIqXlrVREilr7TJK6FXM=s24-p-k');
+    
+    --primary-color: #009578;
+    --font-family: 'Quicksand', sans-serif;
+
+    margin: 0;
+    /*color: var(--text-color);
+    font-family: var(--font-family);
+    background: var(--background-color);*/
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body.theme-dark {
+	--black-yellow: var(--dark-black-yellow);
+	--black-blue: var(--dark-black-blue);
+    --background-color: var(--dark-background-color);
+    --background-color-alt: var(--dark-background-color-alt);
+    --trim-color: var(--dark-trim-color);
+    --text-color: var(--dark-text-color);
+	--icon-color: var(--dark-icon-color);
+	--icon-menu: var(--dark-icon-menu);
+	--hr: var(--dark-hr);
+	--icon-text-hover: var(--dark-icon-text-hover);
+	--icon-active: var(--dark-icon-active);
+	--black-to-white: var(--dark-black-to-white);
+	--#F5F5F5-to-#111: var(--dark-#F5F5F5-to-#111);
+	--search-input: var(--dark-search-input);
+	--table-td-child: var(--dark-table-td-child);
+	--table-td: var(--dark-table-td);
+	--table-th: var(--dark-table-th);
+	--movie-background-picture: var(--dark-movie-background-picture);
+	--link-background: var(--dark-link-background);
+	--link-header: var(--dark-link-header);
+	--yellow-to-white: var(--dark-yellow-to-white);
+	--search-border: var(--dark-search-border);
+	--search-background: var(--dark-search-background);
+	--search-background-b: var(--dark-search-background-b);
+	--rgb-to-rgb: var(--dark-rgb-to-rgb);
+	
+	--logo: url(https://lh3.googleusercontent.com/3DjCjHYxfzuoLaSmnf2ep9Rd4BjTqSXfBagZe810i8IIsGz1eSPNGp-r6V1pU6a42g_s4ETCZZEvEo8MvUI0yZ2kUg9iOGDmMp1JOBKdABonmjq_rwwnN4oZRmQGLXR4_-hSKY2cpA=w2400) no-repeat;
+
+	--theme-logo:  url('https://lh3.googleusercontent.com/jbPogA4xl1VcRWCVNGsaGFUxYjjuA4__3HJNf8OYHUDSs0jOlHdJQSj6sdUgBDeHliEjmLXABU7jUI_l3lLN-kmyRE8smpkU1WNUXyZ2x0QAdaPVNx_wGj3oJxQJ70qWGwfpa5ii=s24-p-k');
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+		--black-yellow: var(--dark-black-yellow);
+        --background-color: var(--dark-background-color);
+        --background-color-alt: var(--dark-background-color-alt);
+        --trim-color: var(--dark-trim-color);
+        --text-color: var(--dark-text-color);
+		--icon-color: var(--dark-icon-color);
+		--icon-menu: var(--dark-icon-menu);
+		--hr: var(--dark-hr);
+		--icon-text-hover: var(--dark-icon-text-hover);
+		--icon-active: var(--dark-icon-active);
+		--black-to-white: var(--dark-black-to-white);
+		--#F5F5F5-to-#111: var(--dark-#F5F5F5-to-#111);
+		--search-input: var(--dark-search-input);
+		--table-td-child: var(--dark-table-td-child);
+		--table-td: var(--dark-table-td);
+		--table-th: var(--dark-table-th);
+		--movie-background-picture: var(--dark-movie-background-picture);
+		--link-background: var(--dark-link-background);
+		--link-header: var(--dark-link-header);
+		--yellow-to-white: var(--dark-yellow-to-white);
+		--search-border: var(--dark-search-border);
+		--search-background: var(--dark-search-background);
+		--search-background-b: var(--dark-search-background-b);
+		--rgb-to-rgb: var(--dark-rgb-to-rgb);
+		
+		--logo: url(https://lh3.googleusercontent.com/3DjCjHYxfzuoLaSmnf2ep9Rd4BjTqSXfBagZe810i8IIsGz1eSPNGp-r6V1pU6a42g_s4ETCZZEvEo8MvUI0yZ2kUg9iOGDmMp1JOBKdABonmjq_rwwnN4oZRmQGLXR4_-hSKY2cpA=w2400) no-repeat;
+
+		--theme-logo:  url('https://lh3.googleusercontent.com/jbPogA4xl1VcRWCVNGsaGFUxYjjuA4__3HJNf8OYHUDSs0jOlHdJQSj6sdUgBDeHliEjmLXABU7jUI_l3lLN-kmyRE8smpkU1WNUXyZ2x0QAdaPVNx_wGj3oJxQJ70qWGwfpa5ii=s24-p-k');
+    }
+}
+hr {
+	margin: 0px auto;
+	padding: .5px 0 0 0;
+	width: 100%;
+	background-color: var(--hr);
+	display: block;
+	border: 0px solid var(--hr);
+}

@@ -1,0 +1,92 @@
+/*Big text discription*/
+.q_s_t {
+    padding: 10px 5px;
+    color: var(--black-to-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+	margin-top: 10px;
+}
+.q_s_t_border {
+    border-left: 4px solid #f5c518;
+    border-radius: 4px;
+    font-size: 23px;
+    margin-right: 6px;
+}
+.discover_all {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.imdb_0_torrent .seeds {
+	display: none;
+}
+.imdb_0_torrent {
+	
+}
+.get_discover_list {
+	/*border: 0px solid red;*/
+	padding: 0 10px;
+	word-break: break-all;
+	margin: 20px 0px;
+	border-left: 3px solid #f5c518;
+	box-shadow: 0 3px 10px var(--rgb-to-rgb);
+	/*background: var(--background-color-alt);*/
+	background: -webkit-linear-gradient(to right, var(--background-color-alt), var(--background-color), var(--background-color)); 
+	background-image: linear-gradient(to right, var(--background-color-alt), var(--background-color), var(--background-color));
+}
+.get_discover_list:hover {
+	border-left: 8px solid #f5c518;
+}
+.get_tv_list {
+	/*border: 0px solid red;*/
+	padding: 0 0px;
+	word-break: break-all;
+	margin: 20px 0px;
+	border-left: 3px solid #f5c518;
+	/*box-shadow: 0 3px 10px var(--rgb-to-rgb);
+	background: var(--background-color-alt);*/
+	color: var(--black-white);
+
+	background: -webkit-linear-gradient(to right, var(--background-color-alt), var(--background-color), var(--background-color)); 
+	background: linear-gradient(to right, var(--background-color-alt), var(--background-color), var(--background-color));
+
+}
+.get_tv_list:hover {
+	border-left: 8px solid #f5c518;
+}
+.imdb_0_torrent {
+	color: var(--black-to-white);
+    font-family: 'Roboto', sans-serif;
+	letter-spacing: .5px;
+}
+.a_tag {
+    font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+.p {
+	font-size: 11px;
+    font-weight: 400;
+	display: inline;
+	color: var(--text-color);
+}
+.tv_img {
+	height: 67px;
+	width: 45px;
+	border: 0px solid red;
+}
+.tv_text {
+	border: 0px solid red;
+	height: 60px;
+	width: 405px;
+	margin-top: -60px;
+	padding: 0 0 0 0;
+}
+.padding_60px {
+	padding-left: 60px;
+}

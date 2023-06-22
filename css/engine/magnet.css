@@ -1,0 +1,97 @@
+body {
+    word-break: break-all;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+}
+.full_page_details {
+    font: normal 12px/30px monospace;
+}
+/*------------------Display None---------------*/
+.content_raw {
+    margin-top: 0px;
+}
+.content_raw header {
+    display: none;
+}
+.content_raw .top-bar-nav {
+    display: none;
+}
+.content_raw .list-box {
+    display: none;
+}
+.content_raw .info {
+    display: none;
+}
+.content_raw .bitcoin {
+    display: none;
+}
+.content_raw .modal-title {
+    display: none;
+}
+.content_raw .modal-body {
+    display: none;
+}
+.content_raw .modal-body {
+    display: none;
+}
+.content_raw footer {
+    display: none;
+}
+.content_raw img {
+    display: none;
+}
+.content_raw .infohash-box {
+    display: none;
+}
+/*------------------Display None END-----------*/
+/*------all cointainer-------*/
+.engine-cointainer {
+    max-width: 1202px;
+    margin: 0 auto;
+    border: 0px solid red;
+    display: block;
+    width: 100%;
+}
+/*------all cointainer END-------*/
+/*--------------------Page Contain by RAW ---------------*/
+.content_raw .page-content {
+    border: 1px solid green;
+}
+.content_raw .torrent-tabs {
+    border: 1px solid red;
+}
+.content_raw .list {
+    border: 1px solid blue;
+}
+
+/*--------------------Page Contain by RAW END---------------*/
+/*-----------------Match data ----------------------*/
+.match_data_all {
+    border-top: 1px solid var(--hr);
+    float: left;
+    word-break: break-all;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.torrent_details_0 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+    background-color: var(--table-td-child);
+    padding: 10px 30px;
+    color: var(--text-color);
+}
+/*-----------------Match data END----------------------*/

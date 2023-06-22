@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+		.streaming_movies_magnet  {
+			width: 360px;
+			height: 300px;
+			margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+		}
+@media screen and (min-device-width: 0px) and (max-device-width: 299px){
+    .streaming_movies_magnet  {
+			width: 200px;
+			height: 300px;
+    }
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 359px){
+    .streaming_movies_magnet  {
+			width: 300px;
+			height: 300px;
+    }
+}		
+@media screen and (min-device-width: 360px) and (max-device-width: 600px){
+    .streaming_movies_magnet {
+			width: 360px;
+			height: 300px;
+    }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1024px){
+    .streaming_movies_magnet {
+			width: 600px;
+			height: 300px;
+    }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px){
+    .streaming_movies_magnet {
+			width: 1024px;
+			height: 600px;
+    }
+}
+@media screen and (min-device-width: 1201px) and (max-device-width: 1920px){
+    .streaming_movies_magnet {
+			width: 1200px;
+			height: 600px;
+    }
+}
+/*--------------------------------html---------------*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+                    .background{
+                        position:absolute;
+                        top:0;
+                        bottom:0;
+                        left:0;
+                        right:0;
+                        text-align:center;
+                        font-family: 'Roboto', sans-serif;
+                        color:var(--text-color);
+                        }
+                        
+                        .inputText{
+                        width:95%;
+						max-width: 600px;
+                        margin:30px 0 0 0;
+                        padding:10px;
+                        border:0px;
+
+                        background-color:var(--background-color);
+                        color: var(--text-color);
+                        border-radius:4px;
+                        font-size:21px;
+                        border: 3px solid var(--black-to-white);
+                        }
+                        .span_m {
+                            border: 3px solid #f5c518;
+                            margin: 0 8px 0 0;
+                            border-radius: 0px;
+                        }
+
+                        .submitbox{
+                        margin:0px 0 0 0;
+                        padding:10px 70px;
+                        border:0px;
+                        background-color: #f5c518;
+                        color: #000;
+                        border-radius:4px;
+                        font-size:21px;
+                        border: 0px solid var(--icon-color);
+                        cursor: pointer;
+                        }
+                        
+                        .inputText:focus{
+                        outline:none;
+                        box-shadow: none;
+                        }
+                        
+                        .inputText::placeholder{
+                        font-weight: italic;
+                        color: var(--icon-color);
+                        }
+                        .inputText:hover{
+                        /*   box-shadow: 0px 0px 2px 2px gainsboro; */
+                        cursor:pointer;
+                        }
+                        .magnet_player {
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 30px;
+                            font-weight: 500;
+                        }

@@ -1,0 +1,170 @@
+header {
+        border-bottom: 0px solid var(--hr);
+}
+body{
+    background-color: var(--background-color-alt);
+    /*background: url(https://1337x.to/css/images/body-bg.jpg) repeat 0 0;*/
+}
+main {
+}
+*:focus {
+    outline: none;
+  }
+  /*-------Search box------*/
+  .search-box-border {
+      width: 50%;
+      max-width: 640px;
+      padding: 0px;
+      border: 0px solid #fff;
+      border-radius: 2px;
+      overflow-x: hidden;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      left: 0;
+      right: 0;
+      top: 12;
+      text-align: center;
+      display: block;
+  }
+  #searchForm {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  #results {
+      text-align: left;
+      font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  }
+  .ui-helper-hidden-accessible {
+      color: red;
+      display: none;
+  }
+  .search-hover-color-change {
+      display: inline;
+      float: left;
+      border: 1px solid red;
+  }
+  .search-button {
+      height: 32px;
+      width: 65px;
+      font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+      border: 1px solid var(--search-border);
+      border-left: 0;
+      float: right;
+      cursor: pointer;
+      border-radius: 0 3px  3px 0;
+      background-color: var(--search-background-b);
+  }
+  .search-input {
+      height: 32px;
+      width: calc(100% - 65px);
+      border: 1px solid #f1f1f1;
+      font-family: 'Roboto','Noto',sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 0 5px 0 100px;
+      color: var(--text-color);
+      border: 1px solid var(--search-border);
+      border-radius: 2px 0 0 2px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      background-color: var(--search-background);
+  }
+  .search-input:focus {
+    border: 1px solid #1c62b9;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+  }
+  .search-icon-color {
+      color: #606060;
+  }
+  #selectSite {
+      width: 80px;
+      margin: 6px 0px 0px 10px;
+      position: absolute;
+      border: 0px solid red;
+      font-size: 16px;
+      font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+      text-align: center;
+      color: var(--icon-color);
+      background-color: var(--search-background);
+      cursor: pointer;
+  }
+  /*---------suggest list START--------------*/
+  .list-suggest {
+      border: 0px solid red;
+      list-style-type: none;
+      margin: 0 0 10px 0;
+      padding: 0;
+      overflow: hidden;
+      top: 0;
+      left:0;
+      cursor: pointer;
+  }
+  .imdbImage {
+      width: 34px ;
+      height: 50px;
+      border: 0px solid red;
+      float: left;
+  }
+  .suggest-text {
+      border: 0px solid red;
+      height: 50px;
+      color: var(--text-color);
+  }
+  .imdbTitle {
+      font-size: 16px;
+      font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+      font-weight: 600;
+      padding-left: 10px;
+  }
+  .imdbCast {
+      font-size: 13px;
+      font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+      font-weight: 400;
+      display: block;
+      margin-left: 35px;
+  }
+
+  /*---------suggest list END--------------*/
+
+
+  /*logo*/
+  .logo-image {
+    height: 80px;
+    max-width: 200px;
+    margin-left: 0;
+    border: 0px solid red;
+    background: var(--logo);
+    border: 0px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.centerLogo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainClass {
+    max-width: 600px;
+    width: 98%;
+    margin: 0 auto;
+}
+.indexLink {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+.indexLink a {
+    text-decoration: none;
+    color: var(--icon-color);
+    padding: 0 8px;
+}
+.indexLink a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+
